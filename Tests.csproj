@@ -41,8 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Tests/TestingStuffNoTestFixture.cs" />
      <Compile Include="Assets/Tests/TestingStuffTestFixture.cs" />
+     <Compile Include="Assets/Tests/TestingStuffNoTestFixture.cs" />
      <None Include="Assets/Tests/Tests.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

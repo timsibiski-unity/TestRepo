@@ -41,8 +41,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Editor/Tests/Test.cs" />
-     <None Include="Assets/Editor/Tests/Tests.asmdef" />
+     <Compile Include="Assets/Editor/DisableBitcode.cs" />
+     <None Include="Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.166_manifest.txt" />
+     <None Include="Assets/FacebookSDK/Plugins/Editor/Dependencies.xml" />
      <Reference Include="UnityEngine">
      <HintPath>/Applications/Unity/Hub/Editor/2021.3.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>
@@ -327,6 +328,45 @@
      </Reference>
      <Reference Include="unityplastic">
      <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Library/PackageCache/com.unity.collab-proxy@1.17.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+     </Reference>
+     <Reference Include="Facebook.Unity.Editor">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Facebook.Unity.Android">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll</HintPath>
+     </Reference>
+     <Reference Include="LibFBGManaged">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Windows/LibFBGManaged.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.VersionHandler">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.VersionHandlerImpl">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/ExternalDependencyManager/Editor/Google.VersionHandlerImpl.dll</HintPath>
+     </Reference>
+     <Reference Include="Facebook.Unity.Windows">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Windows/Facebook.Unity.Windows.dll</HintPath>
+     </Reference>
+     <Reference Include="Facebook.Unity.Canvas">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Canvas/Facebook.Unity.Canvas.dll</HintPath>
+     </Reference>
+     <Reference Include="XInputDotNetPure">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Windows/XInputDotNetPure.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.IOSResolver">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/ExternalDependencyManager/Editor/Google.IOSResolver.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.PackageManagerResolver">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/ExternalDependencyManager/Editor/Google.PackageManagerResolver.dll</HintPath>
+     </Reference>
+     <Reference Include="Facebook.Unity.Settings">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.JarResolver">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/ExternalDependencyManager/Editor/Google.JarResolver.dll</HintPath>
+     </Reference>
+     <Reference Include="Facebook.Unity">
+     <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>/Users/timsibiski/Desktop/TicketInvestigations/TestRepo/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -798,6 +838,10 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{d2d9730c-5b58-2ea7-6fd2-66c1dc1460f6}</Project>
+      <Name>Assembly-CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
